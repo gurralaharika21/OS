@@ -74,13 +74,14 @@ class HTTPServer:
                 response = b'''HTTP/1.1 200 OK
 content -Type : text/html
 content - Length : 37
+
+
 <html>
 <head>
 <title> Tiny Web Server </title>
 </head>
 <body>
-
-<h1> webserver under construction </h1>
+<h1> webserver Under Construction </h1>
 </body>
 </html>'''
                 client.sendall(response)
@@ -94,7 +95,7 @@ def main():
     # test harness checks for your web server on the localhost and on port 8888
     # do not change the host and port
     # you can change  the HTTPServer object if you are not following OOP
-    HTTPServer('', 9998)
+    HTTPServer('', 1221)
 
 if __name__ == "__main__":
     main()   
